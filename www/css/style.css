@@ -1,0 +1,12 @@
+body {
+  background-color: #a5a5a5; }
+
+#hat {
+  position: relative;
+  background: url("../img/tree-bg.jpg");
+  min-height: 500px; }
+
+#quota {
+  position: relative;
+  background: url("../img/quota.svg");
+  background-repeat: no-repeat; }

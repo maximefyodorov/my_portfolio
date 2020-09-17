@@ -1,0 +1,1 @@
+SELECT List.Description, List.Year, List.Filename FROM List, Types WHERE Types.TypeID = List.TypeOfProject AND Types.TypeID = 1 ORDER BY List.Year DESC
