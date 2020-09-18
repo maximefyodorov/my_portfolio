@@ -5,33 +5,267 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Максим Федоров | портфолио</title>
+    <script src="https://kit.fontawesome.com/23cf449ec7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- START HERE -->
-    <section id = "hat" class="py-5">
-        <div class="container">
+    <!-- HEADER -->
+    <section id = "hat">
+        <div  class="container py-5">
             <div class="row">
                 <div class="col lg-6">
                     <img src="img/logo.svg" alt="" class="img-fluid">
                 </div>
                 <div class="col lg-6 d-none d-lg-block">
-                    <p id = "quota" class="text-black bg-primary text-right px-3 py-2">Если бы деревья могли говорить, они бы не стали<br><strong>Дориан Ло</strong></p>
+                    <p id = "quota" class="text-black bg-light text-right px-3 py-2">Если бы деревья могли говорить, они бы не стали<br><strong>Дориан Ло</strong></p>
                 </div>
             </div>
         </div>
     </section>
+    <!--PORTFOLIO NAVIGATION-->
+    <section class="bg-light">
+        <div id = "portfolio" class="container">
+             <div class="d-flex flex-row text-white align-item-stretch text-center">
+                <div class="portfolio-item p-4 bg-danger" data-toggle="collapse" data-target="#posters">
+                    <i class="fas fa-scroll fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Постеры</span>
+                </div>
+                <div class="portfolio-item p-4 bg-sunny"  data-toggle="collapse" data-target="#logos">
+                    <i class="fas fa-registered fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Айдентика</span>
+                </div>
+                <div class="portfolio-item p-4 bg-warning"  data-toggle="collapse" data-target="#ads">
+                    <i class="fas fa-ad fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Реклама</span>
+                </div>
+                <div class="portfolio-item p-4 bg-success"  data-toggle="collapse" data-target="#pack">
+                    <i class="fas fa-box-open fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Упаковка</span>
+                </div>
+            </div>
+            <div class="d-flex flex-row text-white align-item-stretch text-center">
+                <div class="portfolio-item p-4 bg-primary"  data-toggle="collapse" data-target="#calendars">
+                    <i class="fas fa-calendar-alt fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Календари</span>
+                </div>
+                <div class="portfolio-item p-4 bg-info"  data-toggle="collapse" data-target="#web">
+                    <i class="fas fa-globe fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Сайты</span>
+                </div>
+                <div class="portfolio-item p-4 bg-secondary"  data-toggle="collapse" data-target="#photo">
+                    <i class="fas fa-camera fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Фотография</span>
+                </div>
+                <div class="portfolio-item p-4 bg-dark"  data-toggle="collapse" data-target="#misc">
+                    <i class="fas fa-ellipsis-h fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Другое</span>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- POSTERS -->
+    <section>
+        <div id="posters" class="collapse show bg-white">
+            <div class="container p-2">
+                <h2 class="display-4 text-danger my-3">Постеры (рекламные плакаты)</h2>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illum fugit consequatur quo harum amet est eligendi quasi dolore accusamus. Accusamus atque magni perferendis optio!</p>
+                <div class="row mb-4">
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp shadow">
+                            <div class="card-header text-center">1999 <i class="fas fa-check"></i> РА «ИНАРТ»</div>
+                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Постер 1</h5>
+                                <p class="card-text truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est totam, accusamus, recusandae ex cumque commodi laborum facere ab cum illo hic omnis pariatur inventore at!</p>
+                                <button class="btn btn-danger stretched-link" data-toggle="modal" data-target="#posters_01">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp shadow">
+                            <div class="card-header text-center">1999 <i class="fas fa-check"></i> РА «ИНАРТ»</div>
+                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Постер 1</h5>
+                                <p class="card-text truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eaque!</p>
+                                <a href="#" class="btn btn-danger">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp shadow">
+                            <div class="card-header text-center">1999 <i class="fas fa-check"></i> РА «ИНАРТ»</div>
+                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Постер 1</h5>
+                                <p class="card-text truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eaque!</p>
+                                <a href="#" class="btn btn-danger">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp shadow">
+                            <div class="card-header text-center">1999 <i class="fas fa-check"></i> РА «ИНАРТ»</div>
+                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Постер 1</h5>
+                                <p class="card-text truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eaque!</p>
+                                <a href="#" class="btn btn-danger">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col md-3">
+                        <div class="card mb-resp">
+                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Постер 1</h5>
+                                <p class="card-text truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eaque!</p>
+                                <a href="#" class="btn btn-danger">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-3">
+                        <div class="card mb-resp">
+                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Постер 1</h5>
+                                <p class="card-text truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id rem accusantium perspiciatis quia, a vitae debitis modi iure adipisci facilis ex. In maiores voluptatibus aut fugiat praesentium dolore beatae harum vero sit architecto deleniti eos libero recusandae quo delectus earum tempore id adipisci blanditiis, aperiam explicabo. Amet nostrum atque veniam.</p>
+                                <a href="#" class="btn btn-danger">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-3">
+                        <div class="card mb-resp">
+                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Постер 1</h5>
+                                <p class="card-text truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eaque!</p>
+                                <a href="#" class="btn btn-danger">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-3">
+                        <div class="card mb-resp">
+                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Постер 1</h5>
+                                <p class="card-text truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id rem accusantium perspiciatis quia, a vitae debitis modi iure adipisci facilis ex. In maiores voluptatibus aut fugiat praesentium dolore beatae harum vero sit architecto deleniti eos libero recusandae quo delectus earum tempore id adipisci blanditiis, aperiam explicabo. Amet nostrum atque veniam.</p>
+                                <a href="#" class="btn btn-danger">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!--LOGOS -->
+    <section>
+        <div id="logos" class="collapse bg-white">
+            <div class="container p-2">
+                <h2 class="display-4 text-sunny">Знаки и логотипы</h2>
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, distinctio!</p>
+                <hr>
+            </div>    
+        </div>
+    </section>
+
+    <!--ADVERTISING -->
+    <section>
+        <div id="ads" class="collapse bg-white">
+            <div class="container p-2">
+                <h2 class="display-4 text-warning">Реклама в печати</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi necessitatibus ea sint odio quibusdam soluta veniam impedit rem vero? Rerum eos laboriosam dolor reiciendis commodi esse veritatis ipsum labore pariatur ipsam et fuga enim dolorem vel voluptatem, at ipsa consequuntur! Ipsa quisquam aperiam, quas labore quia quos porro libero?</p>
+                <hr>
+            </div>    
+        </div>
+    </section>
+
+    <!--POSTERS MODAL -->
+
+    <div class="modal fade" id="posters_01">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger">Постер 1</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <img class="img-fluid" src="img/posters/p-01-01.jpg" alt=""> -->
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active bg-medium">
+                            <img src="img/posters/p-01-01.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item bg-medium">
+                            <img src="img/posters/p-01-04.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item bg-medium">
+                            <img src="img/posters/p-01-05.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptates quidem minima perferendis quisquam nulla!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER -->
+    <footer id="maim-footer" class="bg-light text-black">
+        <div class="container px-2 py-5">
+            <p>&copy; Максим Федоров, дизайн и фото, 1996-<span id="year"></span></p>
+        </div>
+    </footer>
 
     <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/jQuery.succinct.min.js"></script>
     <script>
-        //Get the current year
-        $('#year').text(new Date().getFullYear();
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+
+        $('.portfolio-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
+
+        $(function(){
+            $('.truncate').succinct({
+                size: 80
+            });
+        });
     </script>
 </body>
 </html>

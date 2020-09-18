@@ -1,7 +1,8 @@
-$main-gray: #a5a5a5;
+$main-gr: #a5a5a5;
+$color-poster:     #c12700;
 
 body {
-  background-color: $main-gray;
+  background-color: $main-gr;
 }
 
 #hat {
@@ -14,4 +15,26 @@ body {
   position: relative;
   background: url('../img/quota.svg');
   background-repeat: no-repeat;
+}
+
+#portfolio {
+  .portfolio-item {
+    width: 30%;
+    :hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}
+
+#posters {
+  i {
+    color: $color-poster;
+  }
+}
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
 }

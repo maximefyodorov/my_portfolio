@@ -10,3 +10,17 @@ body {
   position: relative;
   background: url("../img/quota.svg");
   background-repeat: no-repeat; }
+
+#portfolio .portfolio-item {
+  width: 30%; }
+  #portfolio .portfolio-item :hover {
+    opacity: 0.8;
+    cursor: pointer; }
+
+#posters i {
+  color: #c12700; }
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0; }
