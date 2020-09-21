@@ -1,8 +1,24 @@
-$main-gr: #a5a5a5;
-$color-poster:     #c12700;
+$posters-color: #c12700; 
+$logos-color:   #d9931e; 
+$advert-color:  #eaca29; 
+$pack-color:    #2e960f; 
+$calend-color:  #299ddc; 
+$sites-color:   #003aaa; 
+$photo-color:   #71009c; 
+$misc-color:    #736357; 
+$light-gray:    #a5a5a5; 
+$dark-gray:     #616868;
+
+@mixin symbol-color ($name, $color) {
+  ##{$name} {
+    i {
+      color: $color;
+    }
+  }
+}
 
 body {
-  background-color: $main-gr;
+  background-color: $light-gray;
 }
 
 #hat {
@@ -27,11 +43,14 @@ body {
   }
 }
 
-#posters {
-  i {
-    color: $color-poster;
-  }
-}
+@include symbol-color('posters', $posters-color);
+@include symbol-color('logos', $logos-color);
+@include symbol-color('advert', $advert-color);
+@include symbol-color('pack', $pack-color);
+@include symbol-color('calend', $calend-color);
+@include symbol-color('sites', $sites-color);
+@include symbol-color('photo', $photo-color);
+@include symbol-color('misc', $misc-color);
 
 .carousel-caption {
   position: relative;

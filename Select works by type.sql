@@ -1,1 +1,1 @@
-SELECT List.Description, List.Year, List.Filename FROM List, Types WHERE Types.TypeID = List.TypeOfProject AND Types.TypeID = 1 ORDER BY List.Year DESC
+SELECT WORKLIST.work_ID, WORKLIST.desc, WORKLIST.year, WORKLIST.period, WORKLIST.filename FROM WORKLIST, TYPES WHERE TYPES.type_ID = WORKLIST.type AND TYPES.type_ID = 4 ORDER BY WORKLIST.year DESC

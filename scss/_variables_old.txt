@@ -34,17 +34,20 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
-// custom colors
+// $blue:    #299ddc !default;
+// $indigo:  #003aaa !default;
+// $purple:  #71009c !default;
+// $pink:    #e83e8c !default;
+// $red:     #c12700 !default;
+// $orange:  #d9931e !default;
+// $yellow:  #eaca29 !default;
+// $green:   #2e960f !default;
+// $teal:    #20c997 !default;
+// $cyan:    #17a2b8 !default;
+// $main-gr: #a5a5a5 !default;
+// $dark-gr: #3f4e6b !default;
+
+
 $posters-color: #c12700 !default;
 $logos-color:   #d9931e !default;
 $advert-color:  #eaca29 !default;
@@ -56,21 +59,30 @@ $misc-color:    #736357 !default;
 $light-gray:    #a5a5a5 !default;
 $dark-gray:     #616868 !default;
 
+
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
+// $colors: map-merge(
+//   (
+//     "blue":       $blue,
+//     "indigo":     $indigo,
+//     "purple":     $purple,
+//     "pink":       $pink,
+//     "red":        $red,
+//     "orange":     $orange,
+//     "yellow":     $yellow,
+//     "green":      $green,
+//     "teal":       $teal,
+//     "cyan":       $cyan,
+//     "white":      $white,
+//     "gray":       $main-gr,
+//     "gray-dark":  $dark-gr
+//    ),
+//   $colors
+// );
+
 $colors: map-merge(
   (
-    "blue":       $blue,
-    "indigo":     $indigo,
-    "purple":     $purple,
-    "pink":       $pink,
-    "red":        $red,
-    "orange":     $orange,
-    "yellow":     $yellow,
-    "green":      $green,
-    "teal":       $teal,
-    "cyan":       $cyan,
-    "white":      $white,
     "posters-color": $posters-color,
     "logos-color":   $logos-color,
     "advert-color":  $advert-color,
@@ -79,18 +91,24 @@ $colors: map-merge(
     "sites-color":   $sites-color,
     "photo-color":   $photo-color,
     "misc-color":    $misc-color,
-    "gray":       $light-gray,
-    "gray-dark":  $dark-gray
-  ),
+    "white":         $white,
+    "light-gray":    $light-gray,
+    "dark-gray":     $dark-gray
+   ),
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+
+// $primary:       $blue !default;
+// $secondary:     $purple !default;
+// $success:       $green !default;
+// $info:          $indigo !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $sunny:         $orange !default;
+// $light:         $main-gr !default;
+// $dark:          $dark-gr !default;
+
 $posters:       $posters-color !default;
 $logos:         $logos-color !default;
 $advert:        $advert-color !default;
@@ -106,12 +124,6 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
     "posters":    $posters,
     "logos":      $logos,
     "advert":     $advert,
@@ -119,8 +131,9 @@ $theme-colors: map-merge(
     "calend":     $calend,
     "sites":      $sites,
     "photo":      $photo,
-    "misc":       $misc,    
+    "misc":       $misc,
     "light":      $light,
+    "medium":     $gray-600,
     "dark":       $dark
   ),
   $theme-colors
@@ -213,7 +226,8 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") !default;
+// $link-color:                              theme-color("primary") !default;
+$link-color:                              theme-color("medium") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   underline !default;
@@ -288,7 +302,7 @@ $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
 $component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-bg:         theme-color("medium") !default;
 
 $caret-width:                 .3em !default;
 $caret-vertical-align:        $caret-width * .85 !default;
@@ -580,7 +594,7 @@ $custom-control-label-disabled-color:           $gray-600 !default;
 
 $custom-control-indicator-checked-color:        $component-active-color !default;
 $custom-control-indicator-checked-bg:           $component-active-bg !default;
-$custom-control-indicator-checked-disabled-bg:  rgba(theme-color("primary"), .5) !default;
+$custom-control-indicator-checked-disabled-bg:  rgba(theme-color("medium"), .5) !default;
 $custom-control-indicator-checked-box-shadow:   none !default;
 $custom-control-indicator-checked-border-color: $custom-control-indicator-checked-bg !default;
 
@@ -1042,7 +1056,7 @@ $progress-bg:                       $gray-200 !default;
 $progress-border-radius:            $border-radius !default;
 $progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1) !default;
 $progress-bar-color:                $white !default;
-$progress-bar-bg:                   theme-color("primary") !default;
+$progress-bar-bg:                   theme-color("medium") !default;
 $progress-bar-animation-timing:     1s linear infinite !default;
 $progress-bar-transition:           width .6s ease !default;
 
@@ -1156,7 +1170,7 @@ $close-text-shadow:                 0 1px 0 $white !default;
 // Code
 
 $code-font-size:                    87.5% !default;
-$code-color:                        $pink !default;
+$code-color:                        $logos !default;
 
 $kbd-padding-y:                     .2rem !default;
 $kbd-padding-x:                     .4rem !default;

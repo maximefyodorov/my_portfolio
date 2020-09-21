@@ -20,6 +20,27 @@ body {
 #posters i {
   color: #c12700; }
 
+#logos i {
+  color: #d9931e; }
+
+#advert i {
+  color: #eaca29; }
+
+#pack i {
+  color: #2e960f; }
+
+#calend i {
+  color: #299ddc; }
+
+#sites i {
+  color: #003aaa; }
+
+#photo i {
+  color: #71009c; }
+
+#misc i {
+  color: #736357; }
+
 .carousel-caption {
   position: relative;
   left: 0;
