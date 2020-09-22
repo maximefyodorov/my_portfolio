@@ -62,47 +62,73 @@
       </div>
     </section>
 
-    {% for i in range (8) %}
-    <!-- PORTFOLIO {{ my_genres[i][2]|upper }} SECTION -->
+    {% for i in range (my_genres|length) %}{% set current_genre = my_genres[i][2] %}
+    <!-- PORTFOLIO {{ current_genre|upper }} SECTION -->
     <section">
-        <div id="{{ my_genres[i][2] }}" class="collapse bg-white mb-5">
+        <div id="{{ current_genre }}" class="collapse bg-white mb-5">
             <div class="container p-2">
-                <h2 class="display-4 text-{{ my_genres[i][2] }} my-3">{{ my_genres[i][0] }}</h2>
+                <h2 class="display-4 text-{{ current_genre }} my-3">{{ my_genres[i][0] }}</h2>
                 <p class="lead mb-4">{{ my_genres[i][1] }}</p>
+                <!-- {{ current_genre|upper }} ITEMS -->{% set items_count = namespace(value=my_works[current_genre]|length) %}{% set rows_total = (items_count.value|int+3)//4 %}{% set current = namespace(value=0) %}{% for j in range(rows_total) %}
+                <div class="row mb-4">{% for k in range (4) %}
+                    <div class="col-6 col-md-3">{% if items_count.value|int >0 %}
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>{{ my_works[current_genre][current.value|int][1] }} <i class="fas fa-check"></i> {{ my_works[current_genre][current.value|int][3] }}</small></div>
+                            <img src="img/{{ current_genre }}/{{ my_works[current_genre][current.value|int][6] }}_thumb.jpg" alt="" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title text-{{ current_genre }}">{{ my_works[current_genre][current.value|int][4] }}</h5>
+                                <p class="card-text truncate">{{ my_works[current_genre][current.value|int][5] }}</p>
+                                <button class="btn btn-sm btn-{{ current_genre }}" data-toggle="modal" data-target="#{{ my_works[current_genre][current.value|int][6] }}">Подробнее</button>
+                            </div>
+                        </div>{% set items_count.value = items_count.value - 1 %}{% set current.value = current.value + 1 %}{% endif %}
+                    </div>{% endfor %}
+                </div>{% endfor %}
             </div>    
         </div>
     </section>
-    {% endfor %}
 
-    <!-- POSTERS 
-    <section">
-        <div id="posters" class="collapse bg-white mb-5">
-            <div class="container p-2">
-                <h2 class="display-4 text-posters my-3">Постеры</h2>
-                <p class="lead mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illum fugit consequatur quo harum amet est eligendi quasi dolore accusamus. Accusamus atque magni perferendis optio!</p>
-                <div class="row mb-4">
-                    <div class="col-6 col-md-3">
-                        <div class="card mb-resp">
-                            <div class="card-header text-center"><small>1999 <i class="fas fa-check"></i> РА «ИНАРТ»</small></div>
-                            <img src="img/posters/p-01-thumb.jpg" alt="" class="card-img">
-                            <div class="card-body">
-                                <h5 class="card-title text-posters">Постер 1</h5>
-                                <p class="card-text truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est totam, accusamus, recusandae ex cumque commodi laborum facere ab cum illo hic omnis pariatur inventore at!</p>
-                                <button class="btn btn-sm btn-posters" data-toggle="modal" data-target="#posters_01">Подробнее</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                    </div>
-                    <div class="col-6 col-md-3">
-                    </div>
-                    <div class="col-6 col-md-3">
-                    </div>
+   <!-- {{ current_genre|upper }} MODAL -->
+   {% for wrk in my_works[current_genre] %}
+   <div class="modal fade" id="{{ wrk[6] }}">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-{{ current_genre }}">{{ wrk[4] }}</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
                 </div>
-            </div>    
+                <div class="modal-body">{% if wrk|length == 7 %}
+                    <img class="img-fluid" src="img/{{ current_genre }}/{{ wrk[6] }}.jpg" alt="">{% else %}
+                    <div id="carousel_{{ wrk[6] }}" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">{% for z in range (wrk|length-7) %}
+                        <li data-target="#carousel_{{ wrk[6] }}" data-slide-to="{{ z }}"{% if z == 0 %} class="active" {% endif %}> </li>{% endfor %}
+                        </ol>
+                        <div class="carousel-inner bg-dark">{% for z in range (wrk|length-7) %}
+                        <div class="carousel-item {% if z == 0 %}active{% endif %}">
+                            <img src="img/{{ current_genre }}/{{ wrk[6] }}_{{ z+1 }}.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                            <p>{{ wrk[z+7] }}</p>
+                            </div>
+                        </div>{% endfor %}
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel_{{ wrk[6] }}" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel_{{ wrk[6] }}" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>{% endif %}
+                </div>
+                <div class="modal-footer">
+                    <p>{{ wrk[5] }}</p>
+                </div>
+            </div>
         </div>
-    </section> -->
-
+    </div>
+    {% endfor %}    
+    {% endfor %}
+    
     <!--POSTERS MODAL -->
     <div class="modal fade" id="posters_01">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
@@ -186,7 +212,7 @@
 
         $(function(){
             $('.truncate').succinct({
-                size: 80
+                size: 50
             });
         });
     </script>
