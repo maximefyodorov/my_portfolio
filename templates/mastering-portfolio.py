@@ -1,12 +1,18 @@
 import sqlite3
 import jinja2
+from collections import namedtuple
 
 db = sqlite3.connect("portfolio-data.db3")
-
 crsr = db.cursor()
 
 crsr.execute("SELECT typename, intro_text, abbrev, icon FROM TYPES")
 genres = crsr.fetchall()
+
+genres_dictlist = []
+
+for genre in genres:
+  genres_named = namedtuple("genres_data", ["typename", "intro_text", "abbrev", "icon"])
+  genres_dictlist.append(genres_named(*genre)._asdict())
 
 works = {}
 
@@ -25,6 +31,11 @@ for i in range (8):
           tmpline += descitem
       works[genres[i][2]].append(tmpline)
 
+crsr.execute("SELECT title, keywords, description, quota, quota_author, copyright, about, contacts FROM TEXTS where line_ID = 1")
+line = crsr.fetchone()
+
+texts = namedtuple("site_texts", ["title", "keywords", "description", "quota", "quota_author", "copyright", "about", "contacts"])
+
 db.close()
 
 templateLoader = jinja2.FileSystemLoader(searchpath='x:/Development/Portfolio/templates/')
@@ -33,8 +44,9 @@ tmplt = templateEnv.get_template('index_template.html')
 
 with open('www/index_new.html', 'wb') as dest:
     output = tmplt.render(
-        my_genres = genres,
-        my_works = works
+        my_genres = genres_dictlist,
+        my_works = works,
+        my_texts = texts(*line)._asdict()
     )
     dest.write(output.encode('utf-8'))
 
