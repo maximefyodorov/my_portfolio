@@ -52,6 +52,7 @@ body {
 @include symbol-color('photo', $photo-color);
 @include symbol-color('misc', $misc-color);
 
+
 .carousel-caption {
   position: relative;
   left: 0;

@@ -6,19 +6,19 @@ db = sqlite3.connect("portfolio-data.db3")
 crsr = db.cursor()
 
 crsr.execute("SELECT typename, intro_text, abbrev, icon FROM TYPES")
-genres = crsr.fetchall()
+genres_raw = crsr.fetchall()
 
-genres_dictlist = []
+genres = []
 
-for genre in genres:
+for genre in genres_raw:
   genres_named = namedtuple("genres_data", ["typename", "intro_text", "abbrev", "icon"])
-  genres_dictlist.append(genres_named(*genre)._asdict())
+  genres.append(genres_named(*genre)._asdict())
 
 works = {}
 
-for i in range (8):
-  works[genres[i][2]] = []
-  crsr.execute("SELECT WORKLIST.work_ID, WORKLIST.year, WORKLIST.period, CLIENTS.client_name, WORKLIST.title, WORKLIST.desc, WORKLIST.filename FROM WORKLIST, TYPES, CLIENTS WHERE TYPES.type_ID = WORKLIST.type AND CLIENTS.client_ID = WORKLIST.client AND TYPES.type_ID = (?) AND WORKLIST.show = 1 ORDER BY WORKLIST.year DESC", str(i+1))
+for genre_item in genres:
+  works[genre_item['abbrev']] = []
+  crsr.execute("SELECT WORKLIST.work_ID, WORKLIST.year, WORKLIST.period, CLIENTS.client_name, WORKLIST.title, WORKLIST.desc, WORKLIST.filename FROM WORKLIST, TYPES, CLIENTS WHERE TYPES.type_ID = WORKLIST.type AND CLIENTS.client_ID = WORKLIST.client AND TYPES.abbrev = (?) AND WORKLIST.show = 1 ORDER BY WORKLIST.year DESC", (genre_item['abbrev'],))
   curworks = crsr.fetchall()
   if len(curworks) !=0:
     for current in curworks:
@@ -29,7 +29,7 @@ for i in range (8):
       if len(curdesc) !=0:
         for descitem in curdesc:
           tmpline += descitem
-      works[genres[i][2]].append(tmpline)
+      works[genre_item['abbrev']].append(tmpline)
 
 crsr.execute("SELECT title, keywords, description, quota, quota_author, copyright, about, contacts FROM TEXTS where line_ID = 1")
 line = crsr.fetchone()
@@ -44,7 +44,7 @@ tmplt = templateEnv.get_template('index_template.html')
 
 with open('www/index_new.html', 'wb') as dest:
     output = tmplt.render(
-        my_genres = genres_dictlist,
+        my_genres = genres,
         my_works = works,
         my_texts = texts(*line)._asdict()
     )

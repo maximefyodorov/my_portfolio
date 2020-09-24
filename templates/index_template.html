@@ -73,7 +73,7 @@
                 <div class="row mb-4">{% for k in range (4) %}
                     <div class="col-6 col-md-3">{% if items_count.value|int >0 %}
                         <div class="card mb-resp">
-                            <div class="card-header text-center"><small>{{ my_works[gnr['abbrev']][current.value|int][1] }} <i class="fas fa-check"></i> {{ my_works[gnr['abbrev']][current.value|int][3] }}</small></div>
+                            <div class="card-header text-center"><small>{{ my_works[gnr['abbrev']][current.value|int][1] }}{% if my_works[gnr['abbrev']][current.value|int][2] != 0 %}–{{ my_works[gnr['abbrev']][current.value|int][1]+my_works[gnr['abbrev']][current.value|int][2]}}{% endif %} <i class="fas fa-check"></i> {{ my_works[gnr['abbrev']][current.value|int][3] }}</small></div>
                             <img src="img/{{ gnr['abbrev'] }}/{{ my_works[gnr['abbrev']][current.value|int][6] }}_thumb.jpg" alt="" class="card-img">
                             <div class="card-body">
                                 <h5 class="card-title text-{{ gnr['abbrev'] }}">{{ my_works[gnr['abbrev']][current.value|int][4] }}</h5>
