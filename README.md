@@ -1,2 +1,2 @@
 # Portfolio
- Creating site with portfolio of my works ad a graphic designer 
+ Creating site with portfolio of my works as a graphic designer 
