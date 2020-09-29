@@ -45,42 +45,42 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 // custom colors
-$posters-color: #c12700 !default;
-$logos-color:   #d9931e !default;
-$advert-color:  #eaca29 !default;
-$pack-color:    #2e960f !default;
-$calend-color:  #299ddc !default;
-$sites-color:   #003aaa !default;
-$photo-color:   #71009c !default;
-$misc-color:    #736357 !default;
-$light-gray:    #a5a5a5 !default;
-$dark-gray:     #616868 !default;
+$posters-color:    #c12700 !default;
+$logos-color:      #d9931e !default;
+$advertising-color:#eaca29 !default;
+$package-color:    #2e960f !default;
+$calendars-color:  #299ddc !default;
+$sites-color:      #003aaa !default;
+$photography-color:#71009c !default;
+$misc-color:       #736357 !default;
+$light-gray:       #a5a5a5 !default;
+$dark-gray:        #616868 !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
-    "blue":       $blue,
-    "indigo":     $indigo,
-    "purple":     $purple,
-    "pink":       $pink,
-    "red":        $red,
-    "orange":     $orange,
-    "yellow":     $yellow,
-    "green":      $green,
-    "teal":       $teal,
-    "cyan":       $cyan,
-    "white":      $white,
-    "posters-color": $posters-color,
-    "logos-color":   $logos-color,
-    "advert-color":  $advert-color,
-    "pack-color":    $pack-color,
-    "calend-color":  $calend-color,
-    "sites-color":   $sites-color,
-    "photo-color":   $photo-color,
-    "misc-color":    $misc-color,
-    "gray":       $light-gray,
-    "gray-dark":  $dark-gray
+    "blue":               $blue,
+    "indigo":             $indigo,
+    "purple":             $purple,
+    "pink":               $pink,
+    "red":                $red,
+    "orange":             $orange,
+    "yellow":             $yellow,
+    "green":              $green,
+    "teal":               $teal,
+    "cyan":               $cyan,
+    "white":              $white,
+    "posters-color":      $posters-color,
+    "logos-color":        $logos-color,
+    "advertising-color":  $advertising-color,
+    "package-color":      $package-color,
+    "calendars-color":    $calendars-color,
+    "sites-color":        $sites-color,
+    "photography-color":  $photography-color,
+    "misc-color":         $misc-color,
+    "gray":               $light-gray,
+    "gray-dark":          $dark-gray
   ),
   $colors
 );
@@ -93,11 +93,11 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $posters:       $posters-color !default;
 $logos:         $logos-color !default;
-$advert:        $advert-color !default;
-$pack:          $pack-color !default;
-$calend:        $calend-color !default;
+$advertising:   $advertising-color !default;
+$package:       $package-color !default;
+$calendars:     $calendars-color !default;
 $sites:         $sites-color !default;
-$photo:         $photo-color !default;
+$photography:   $photography-color !default;
 $misc:          $misc-color !default;
 $light:         $light-gray !default;
 $dark:          $dark-gray !default;
@@ -106,22 +106,22 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "posters":    $posters,
-    "logos":      $logos,
-    "advert":     $advert,
-    "pack":       $pack,
-    "calend":     $calend,
-    "sites":      $sites,
-    "photo":      $photo,
-    "misc":       $misc,    
-    "light":      $light,
-    "dark":       $dark
+    "primary":      $primary,
+    "secondary":    $secondary,
+    "success":      $success,
+    "info":         $info,
+    "warning":      $warning,
+    "danger":       $danger,
+    "posters":      $posters,
+    "logos":        $logos,
+    "advertising":  $advertising,
+    "package":      $package,
+    "calendars":    $calendars,
+    "sites":        $sites,
+    "photography":  $photography,
+    "misc":         $misc,    
+    "light":        $light,
+    "dark":         $dark
   ),
   $theme-colors
 );
