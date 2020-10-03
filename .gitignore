@@ -1,2 +1,3 @@
-portfolio-venv
-design
+portfolio-venv/
+design/
+.vscode/

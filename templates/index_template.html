@@ -56,7 +56,7 @@
         <div class="d-flex flex-row align-item-stretch text-center">{% for j in range (4) %}
           <div class="portfolio-item p-4 bg-{{ my_genres[(i*4)+j]['abbrev'] }}" data-toggle="collapse" data-target="#{{ my_genres[(i*4)+j]['abbrev'] }}">
             <i class="fas {{ my_genres[(i*4)+j]['icon'] }} fa-2x d-block"></i>
-            <span class="d-none d-sm-block">{{ my_genres[(i*4)+j]['typename'] }}&nbsp;({{ my_works[my_genres[(i*4)+j]['abbrev']]|length }})</span>
+            <span class="d-none d-sm-block">{{ my_genres[(i*4)+j]['typename'] }}&nbsp;<span class="works-number rounded-pill text-{{ my_genres[(i*4)+j]['abbrev'] }}"><strong>{{ my_works[my_genres[(i*4)+j]['abbrev']]|length }}</strong></span></span>
           </div>{% endfor %}
         </div>{% endfor %}
       </div>
