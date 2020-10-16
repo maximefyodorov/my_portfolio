@@ -56,7 +56,7 @@
         <div class="d-flex flex-row align-item-stretch text-center">{% for j in range (4) %}
           <div class="portfolio-item p-4 bg-{{ my_genres[(i*4)+j]['abbrev'] }}" data-toggle="collapse" data-target="#{{ my_genres[(i*4)+j]['abbrev'] }}">
             <i class="fas {{ my_genres[(i*4)+j]['icon'] }} fa-2x d-block"></i>
-            <span class="d-none d-sm-block">{{ my_genres[(i*4)+j]['typename'] }}&nbsp;<span class="works-number rounded-pill text-{{ my_genres[(i*4)+j]['abbrev'] }}"><strong>{{ my_works[my_genres[(i*4)+j]['abbrev']]|length }}</strong></span></span>
+            <span class="d-none d-sm-block">{{ my_genres[(i*4)+j]['typename'] }}&nbsp;<span class="works-number rounded-pill text-{{ my_genres[(i*4)+j]['abbrev'] }}">{{ my_works[my_genres[(i*4)+j]['abbrev']]|length }}</span></span>
           </div>{% endfor %}
         </div>{% endfor %}
       </div>
@@ -74,7 +74,7 @@
                     <div class="col-6 col-md-3">{% if items_count.value|int >0 %}
                         <div class="card mb-resp">
                             <div class="card-header text-center"><small>{{ my_works[gnr['abbrev']][current.value|int]['year'] }}{% if my_works[gnr['abbrev']][current.value|int]['period'] != 0 %}–{{ my_works[gnr['abbrev']][current.value|int]['year']+my_works[gnr['abbrev']][current.value|int]['period']}}{% endif %} <i class="fas fa-check"></i> {{ my_works[gnr['abbrev']][current.value|int]['cust'] }}</small></div>
-                            <span role="button"><img src="img/{{ gnr['abbrev'] }}/{{ my_works[gnr['abbrev']][current.value|int]['filename'] }}_thumb.jpg" alt="{{ gnr['typename'] }}. {{ my_works[gnr['abbrev']][current.value|int]['name'] }}" class="card-img rounded-0" data-toggle="modal" data-target="#{{ my_works[gnr['abbrev']][current.value|int]['filename'] }}"></span>
+                            <span role="button"><img src="img/0{{ gnr['nr'] }}-{{ gnr['abbrev'] }}/{{ my_works[gnr['abbrev']][current.value|int]['filename'] }}_thumb.jpg" alt="{{ gnr['typename'] }}. {{ my_works[gnr['abbrev']][current.value|int]['name'] }}" class="card-img rounded-0" data-toggle="modal" data-target="#{{ my_works[gnr['abbrev']][current.value|int]['filename'] }}"></span>
                             <div class="card-body">
                                 <h5 class="card-title text-{{ gnr['abbrev'] }}">{{ my_works[gnr['abbrev']][current.value|int]['name'] }}</h5>
                                 <p class="card-text truncate">{{ my_works[gnr['abbrev']][current.value|int]['desc'] }}</p>
@@ -96,14 +96,14 @@
                         <button class="close" data-dismiss="modal"><span>&times;</span></button>
                     </div>
                     <div class="modal-body">{% if wrk['details']|length == 0 %}
-                        <img class="img-fluid" src="img/{{ gnr['abbrev'] }}/{{ wrk['filename'] }}.jpg" alt="">{% else %}
+                        <img class="img-fluid" src="img/0{{ gnr['nr'] }}-{{ gnr['abbrev'] }}/{{ wrk['filename'] }}.jpg" alt="">{% else %}
                         <div id="carousel_{{ wrk['filename'] }}" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">{% for z in range (wrk['details']|length) %}
                             <li data-target="#carousel_{{ wrk['filename'] }}" data-slide-to="{{ z }}"{% if z == 0 %} class="active" {% endif %}> </li>{% endfor %}
                             </ol>
                             <div class="carousel-inner bg-dark">{% for z in range (wrk['details']|length) %}
                             <div class="carousel-item {% if z == 0 %}active{% endif %}">
-                                <img src="img/{{ gnr['abbrev'] }}/{{ wrk['filename'] }}_{{ z+1 }}.jpg" class="d-block w-100" alt="{{ wrk['name']}}. {{wrk['details'][z]}}">
+                                <img src="img/0{{ gnr['nr'] }}-{{ gnr['abbrev'] }}/{{ wrk['filename'] }}_{{ z+1 }}.jpg" class="d-block w-100" alt="{{ wrk['name']}}. {{wrk['details'][z]}}">
                                 <div class="carousel-caption">
                                 <p>{{ wrk['details'][z] }}</p>
                                 </div>
