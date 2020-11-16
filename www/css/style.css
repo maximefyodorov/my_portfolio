@@ -6,6 +6,11 @@ body {
   background: url("../img/tree-bg.jpg");
   min-height: 500px; }
 
+#hat-inner {
+  position: relative;
+  background: url("../img/tree-bg.jpg");
+  min-height: 100px; }
+
 #quota {
   position: relative;
   background: url("../img/quota.svg");
@@ -47,7 +52,6 @@ body {
   top: 0; }
 
 .works-number {
-  background-color: white;
   display: inline;
   font-size: 0.75rem;
   font-weight: bold;

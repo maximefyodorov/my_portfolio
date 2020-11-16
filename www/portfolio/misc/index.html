@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>misc</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" >
+    <script src="https://kit.fontawesome.com/23cf449ec7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--NAVBAR -->
+    <nav class="navbar fixed-bottom navbar-expand-md navbar-light bg-light">
+        <div class="container pl-2">
+            <span class="navbar-text"><small>Copyright &copy; Максим Фёдоров, дизайн, фото, 1996–<span id="year"></span></small></span>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-2 my-1">
+                        <button class="btn btn-dark btn-sm text-white" data-toggle="modal" data-target="#about">Обо мне</button>
+                    </li>
+                    <li class="nav-item mr-2 my-1">
+                        <button class="btn btn-dark btn-sm text-white" data-toggle="modal" data-target="#resume">Резюме</button>
+                    </li>
+                    <li class="nav-item mr-2 my-1">
+                        <button class="btn btn-dark btn-sm text-white" data-toggle="modal" data-target="#contacts">Контакты</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        
+    <!-- HEADER -->
+    <section id = "hat-inner">
+        <div  class="container">
+            <div class="row py-4">
+                <div class="col lg-12 bg-light text-center mx-3">
+                    <a href="../../index_multipage_new.html" class = "stretched-link"><img src="../../img/logo-inner.svg" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PORTFOLIO NAVIGATION-->
+    <section class="bg-light text-white">
+      <div id = "portfolio" class="container">
+        <div class="d-flex flex-row align-item-stretch text-center">
+            
+            <div class="portfolio-item p-4 bg-posters">
+            <a href = "../../portfolio/posters" class = "text-white text-decoration-none"><i class="fas fa-scroll fa-2x d-block"></i>
+            <span class="d-none d-sm-block">Постеры&nbsp;<span class="works-number bg-white rounded-pill text-posters">8</span></span></a>
+          </div> 
+            
+            <div class="portfolio-item p-4 bg-logos">
+            <a href = "../../portfolio/logos" class = "text-white text-decoration-none"><i class="fas fa-registered fa-2x d-block"></i>
+            <span class="d-none d-sm-block">Логотипы&nbsp;<span class="works-number bg-white rounded-pill text-logos">8</span></span></a>
+          </div> 
+            
+            <div class="portfolio-item p-4 bg-advertising">
+            <a href = "../../portfolio/advertising" class = "text-white text-decoration-none"><i class="fas fa-ad fa-2x d-block"></i>
+            <span class="d-none d-sm-block">Реклама&nbsp;<span class="works-number bg-white rounded-pill text-advertising">5</span></span></a>
+          </div> 
+            
+            <div class="portfolio-item p-4 bg-package">
+            <a href = "../../portfolio/package" class = "text-white text-decoration-none"><i class="fas fa-box-open fa-2x d-block"></i>
+            <span class="d-none d-sm-block">Упаковка&nbsp;<span class="works-number bg-white rounded-pill text-package">6</span></span></a>
+          </div> 
+        </div>
+        <div class="d-flex flex-row align-item-stretch text-center">
+            
+            <div class="portfolio-item p-4 bg-calendars">
+            <a href = "../../portfolio/calendars" class = "text-white text-decoration-none"><i class="fas fa-calendar-alt fa-2x d-block"></i>
+            <span class="d-none d-sm-block">Календари&nbsp;<span class="works-number bg-white rounded-pill text-calendars">8</span></span></a>
+          </div> 
+            
+            <div class="portfolio-item p-4 bg-sites">
+            <a href = "../../portfolio/sites" class = "text-white text-decoration-none"><i class="fas fa-globe fa-2x d-block"></i>
+            <span class="d-none d-sm-block">Сайты&nbsp;<span class="works-number bg-white rounded-pill text-sites">1</span></span></a>
+          </div> 
+            
+            <div class="portfolio-item p-4 bg-photography">
+            <a href = "../../portfolio/photography" class = "text-white text-decoration-none"><i class="fas fa-camera fa-2x d-block"></i>
+            <span class="d-none d-sm-block">Фотоработы&nbsp;<span class="works-number bg-white rounded-pill text-photography">0</span></span></a>
+          </div> 
+            
+            <div class="portfolio-item p-4 bg-white text-misc text-decoration-none">
+            <i class="fas fa-ellipsis-h fa-2x d-block"></i>
+            <span class="d-none d-sm-block">Другое&nbsp;<span class="rounded-pill works-number text-white bg-misc">11</span></span>
+            </div>
+             
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO MISC SECTION -->
+    <section">
+        <div id="misc" class="bg-white mb-5">
+            <div class="container p-2">
+                <h2 class="display-4 text-misc my-3">Другое</h2>
+                <p class="lead mb-4">Работы, жанр которых трудно отнести к каким-либо осмысленным категориям. Это самый объемный раздел, ведь работы с не вполне определенным жанром среди задач рядового дизайнера встречаются не так уж редко.</p>
+                <!-- MISC ITEMS -->
+                <div class="row mb-4">
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2017 <i class="fas fa-check"></i> ГК «Сварочный Мир»</small></div>
+                            <span role="button"><img src="../../img/08-misc/wwbkl_thumb.jpg" alt="Другое. Буклет" class="card-img rounded-0" data-toggle="modal" data-target="#wwbkl"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Буклет</h5>
+                                <p class="card-text truncate">Презентационный буклет для участия в выставке для группы компаний  «Сварочный мир».</p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#wwbkl">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2014 <i class="fas fa-check"></i> Бар «Depstor»</small></div>
+                            <span role="button"><img src="../../img/08-misc/dpstfl_thumb.jpg" alt="Другое. Флаеры" class="card-img rounded-0" data-toggle="modal" data-target="#dpstfl"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Флаеры</h5>
+                                <p class="card-text truncate">Серия флаеров для продвижения еженедельных мероприятий (вечеринок) в баре «Depstor». Печать в один цвет на крафтовой бумаге.</p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#dpstfl">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2014 <i class="fas fa-check"></i> Бар «Depstor»</small></div>
+                            <span role="button"><img src="../../img/08-misc/dpstbn_thumb.jpg" alt="Другое. Баннеры" class="card-img rounded-0" data-toggle="modal" data-target="#dpstbn"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Баннеры</h5>
+                                <p class="card-text truncate">Несколько примеров из большой серии баннеров для размещения в соцсетях и на собственных веб-ресурсах для продвижения мероприятий в баре «Depstor». </p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#dpstbn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2014 <i class="fas fa-check"></i> TM «Intertool»</small></div>
+                            <span role="button"><img src="../../img/08-misc/intkat_thumb.jpg" alt="Другое. Обложка каталога" class="card-img rounded-0" data-toggle="modal" data-target="#intkat"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Обложка каталога</h5>
+                                <p class="card-text truncate">Варианты дизайна обложки ежегодного каталога продукции ТМ «Intertool»</p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#intkat">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2014 <i class="fas fa-check"></i> TM «Intertool»</small></div>
+                            <span role="button"><img src="../../img/08-misc/intpack_thumb.jpg" alt="Другое. Пакеты" class="card-img rounded-0" data-toggle="modal" data-target="#intpack"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Пакеты</h5>
+                                <p class="card-text truncate">Разработка вариантов фирменных пакетов типа майка с нанесением рекламного изображения для использования в торговой сети Intertool.</p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#intpack">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2014 <i class="fas fa-check"></i> «Мир инструмента»</small></div>
+                            <span role="button"><img src="../../img/08-misc/mirinst_thumb.jpg" alt="Другое. Промо" class="card-img rounded-0" data-toggle="modal" data-target="#mirinst"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Промо</h5>
+                                <p class="card-text truncate">Промонабор для продвижения акции в магазине «Мир инструмента». В состав такого набора обычно входит флаер, который раздают в местах скопления людей и листовка с подробностями акции и ценами на специальные позиции, которую можно найти непосредственно в точке продажи.</p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#mirinst">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2008 <i class="fas fa-check"></i> ООО «Новое Время»</small></div>
+                            <span role="button"><img src="../../img/08-misc/nckat_thumb.jpg" alt="Другое. Каталог" class="card-img rounded-0" data-toggle="modal" data-target="#nckat"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Каталог</h5>
+                                <p class="card-text truncate">Каталог продукции компании «Новое время», предназначенный для торговых представителей на местах. </p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#nckat">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2005 <i class="fas fa-check"></i> «Мегаком»</small></div>
+                            <span role="button"><img src="../../img/08-misc/mgprm_thumb.jpg" alt="Другое. Буклет" class="card-img rounded-0" data-toggle="modal" data-target="#mgprm"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Буклет</h5>
+                                <p class="card-text truncate">Информационный буклет (один сгиб) для распространения в аптеках, посвященный препарату «Промакс» от компании «Мегаком».</p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#mgprm">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2005 <i class="fas fa-check"></i> Издательство «Ранок»</small></div>
+                            <span role="button"><img src="../../img/08-misc/rnk_thumb.jpg" alt="Другое. Книжные серии" class="card-img rounded-0" data-toggle="modal" data-target="#rnk"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Книжные серии</h5>
+                                <p class="card-text truncate">Дизайн книжных серий для издательства «Ранок». Включал в себя разработку концепции обложки и типовых внутренних разворотов, постановку задачи художнику-иллюстратору, обработку готовых иллюстраций, финальную верстку и подготовку макета к печати.</p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#rnk">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2005 <i class="fas fa-check"></i> Фриланс</small></div>
+                            <span role="button"><img src="../../img/08-misc/wbcvr_thumb.jpg" alt="Другое. Тетради" class="card-img rounded-0" data-toggle="modal" data-target="#wbcvr"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Тетради</h5>
+                                <p class="card-text truncate">Комплект обложек для общих тетрадей на тему «Восток», «Цветы» и «Деньги». </p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#wbcvr">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card mb-resp">
+                            <div class="card-header text-center"><small>2002 <i class="fas fa-check"></i> РА «ИНАРТ»</small></div>
+                            <span role="button"><img src="../../img/08-misc/inrhyd_thumb.jpg" alt="Другое. Каталог" class="card-img rounded-0" data-toggle="modal" data-target="#inrhyd"></span>
+                            <div class="card-body">
+                                <h5 class="card-title text-misc">Каталог</h5>
+                                <p class="card-text truncate">Каталог гидравлических узлов для мелитопольского завода гидроагрегатов.</p>
+                                <button class="btn btn-sm btn-misc" data-toggle="modal" data-target="#inrhyd">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- MISC MODALS -->
+    <div class="modal fade" id="wwbkl">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Буклет</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_wwbkl" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_wwbkl" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_wwbkl" data-slide-to="1"> </li>
+                            <li data-target="#carousel_wwbkl" data-slide-to="2"> </li>
+                            <li data-target="#carousel_wwbkl" data-slide-to="3"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/wwbkl_1.jpg" class="d-block w-100" alt="Буклет. Разворот обложки буклета (страницы 1 и 8)">
+                                <div class="carousel-caption">
+                                <p>Разворот обложки буклета (страницы 1 и 8)</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wwbkl_2.jpg" class="d-block w-100" alt="Буклет. Страницы 2-3 буклета">
+                                <div class="carousel-caption">
+                                <p>Страницы 2-3 буклета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wwbkl_3.jpg" class="d-block w-100" alt="Буклет. Страницы 4-5 буклета">
+                                <div class="carousel-caption">
+                                <p>Страницы 4-5 буклета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wwbkl_4.jpg" class="d-block w-100" alt="Буклет. Страницы 6-7 буклета">
+                                <div class="carousel-caption">
+                                <p>Страницы 6-7 буклета</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_wwbkl" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_wwbkl" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Презентационный буклет для участия в выставке для группы компаний  «Сварочный мир».</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="dpstfl">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Флаеры</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_dpstfl" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_dpstfl" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_dpstfl" data-slide-to="1"> </li>
+                            <li data-target="#carousel_dpstfl" data-slide-to="2"> </li>
+                            <li data-target="#carousel_dpstfl" data-slide-to="3"> </li>
+                            <li data-target="#carousel_dpstfl" data-slide-to="4"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/dpstfl_1.jpg" class="d-block w-100" alt="Флаеры. Флаер на 18.07.2014">
+                                <div class="carousel-caption">
+                                <p>Флаер на 18.07.2014</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/dpstfl_2.jpg" class="d-block w-100" alt="Флаеры. Флаер на 25.07.2014">
+                                <div class="carousel-caption">
+                                <p>Флаер на 25.07.2014</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/dpstfl_3.jpg" class="d-block w-100" alt="Флаеры. Флаер на 8.08.2014">
+                                <div class="carousel-caption">
+                                <p>Флаер на 8.08.2014</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/dpstfl_4.jpg" class="d-block w-100" alt="Флаеры. Флаер на 2.08.2014">
+                                <div class="carousel-caption">
+                                <p>Флаер на 2.08.2014</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/dpstfl_5.jpg" class="d-block w-100" alt="Флаеры. Флаер на 9.08.2014">
+                                <div class="carousel-caption">
+                                <p>Флаер на 9.08.2014</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_dpstfl" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_dpstfl" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Серия флаеров для продвижения еженедельных мероприятий (вечеринок) в баре «Depstor». Печать в один цвет на крафтовой бумаге.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="dpstbn">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Баннеры</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_dpstbn" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_dpstbn" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_dpstbn" data-slide-to="1"> </li>
+                            <li data-target="#carousel_dpstbn" data-slide-to="2"> </li>
+                            <li data-target="#carousel_dpstbn" data-slide-to="3"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/dpstbn_1.jpg" class="d-block w-100" alt="Баннеры. Баннер на 27.06">
+                                <div class="carousel-caption">
+                                <p>Баннер на 27.06</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/dpstbn_2.jpg" class="d-block w-100" alt="Баннеры. Баннер «Мы в отпуске», август 2014">
+                                <div class="carousel-caption">
+                                <p>Баннер «Мы в отпуске», август 2014</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/dpstbn_3.jpg" class="d-block w-100" alt="Баннеры. Баннер «Мы открыты», сентябрь 2014">
+                                <div class="carousel-caption">
+                                <p>Баннер «Мы открыты», сентябрь 2014</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/dpstbn_4.jpg" class="d-block w-100" alt="Баннеры. Баннер на 7.06">
+                                <div class="carousel-caption">
+                                <p>Баннер на 7.06</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_dpstbn" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_dpstbn" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Несколько примеров из большой серии баннеров для размещения в соцсетях и на собственных веб-ресурсах для продвижения мероприятий в баре «Depstor». </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="intkat">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Обложка каталога</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_intkat" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_intkat" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_intkat" data-slide-to="1"> </li>
+                            <li data-target="#carousel_intkat" data-slide-to="2"> </li>
+                            <li data-target="#carousel_intkat" data-slide-to="3"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/intkat_1.jpg" class="d-block w-100" alt="Обложка каталога. Утвержденный вариант дизайна обложки">
+                                <div class="carousel-caption">
+                                <p>Утвержденный вариант дизайна обложки</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intkat_2.jpg" class="d-block w-100" alt="Обложка каталога. Вариант 1">
+                                <div class="carousel-caption">
+                                <p>Вариант 1</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intkat_3.jpg" class="d-block w-100" alt="Обложка каталога. Вариант 2">
+                                <div class="carousel-caption">
+                                <p>Вариант 2</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intkat_4.jpg" class="d-block w-100" alt="Обложка каталога. Вариант 3">
+                                <div class="carousel-caption">
+                                <p>Вариант 3</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_intkat" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_intkat" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Варианты дизайна обложки ежегодного каталога продукции ТМ «Intertool»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="intpack">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Пакеты</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_intpack" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_intpack" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_intpack" data-slide-to="1"> </li>
+                            <li data-target="#carousel_intpack" data-slide-to="2"> </li>
+                            <li data-target="#carousel_intpack" data-slide-to="3"> </li>
+                            <li data-target="#carousel_intpack" data-slide-to="4"> </li>
+                            <li data-target="#carousel_intpack" data-slide-to="5"> </li>
+                            <li data-target="#carousel_intpack" data-slide-to="6"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/intpack_1.jpg" class="d-block w-100" alt="Пакеты. Вариант 1 дизайна пакета">
+                                <div class="carousel-caption">
+                                <p>Вариант 1 дизайна пакета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intpack_2.jpg" class="d-block w-100" alt="Пакеты. Вариант 2 дизайна пакета">
+                                <div class="carousel-caption">
+                                <p>Вариант 2 дизайна пакета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intpack_3.jpg" class="d-block w-100" alt="Пакеты. Вариант 3 дизайна пакета">
+                                <div class="carousel-caption">
+                                <p>Вариант 3 дизайна пакета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intpack_4.jpg" class="d-block w-100" alt="Пакеты. Вариант 4 дизайна пакета">
+                                <div class="carousel-caption">
+                                <p>Вариант 4 дизайна пакета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intpack_5.jpg" class="d-block w-100" alt="Пакеты. Вариант 5 дизайна пакета">
+                                <div class="carousel-caption">
+                                <p>Вариант 5 дизайна пакета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intpack_6.jpg" class="d-block w-100" alt="Пакеты. Вариант 6 дизайна пакета">
+                                <div class="carousel-caption">
+                                <p>Вариант 6 дизайна пакета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/intpack_7.jpg" class="d-block w-100" alt="Пакеты. Вариант 7 дизайна пакета">
+                                <div class="carousel-caption">
+                                <p>Вариант 7 дизайна пакета</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_intpack" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_intpack" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Разработка вариантов фирменных пакетов типа майка с нанесением рекламного изображения для использования в торговой сети Intertool.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="mirinst">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Промо</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_mirinst" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_mirinst" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_mirinst" data-slide-to="1"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/mirinst_1.jpg" class="d-block w-100" alt="Промо. Флаер">
+                                <div class="carousel-caption">
+                                <p>Флаер</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/mirinst_2.jpg" class="d-block w-100" alt="Промо. Листовка (лицо и оборот)">
+                                <div class="carousel-caption">
+                                <p>Листовка (лицо и оборот)</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_mirinst" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_mirinst" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Промонабор для продвижения акции в магазине «Мир инструмента». В состав такого набора обычно входит флаер, который раздают в местах скопления людей и листовка с подробностями акции и ценами на специальные позиции, которую можно найти непосредственно в точке продажи.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="nckat">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Каталог</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_nckat" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_nckat" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_nckat" data-slide-to="1"> </li>
+                            <li data-target="#carousel_nckat" data-slide-to="2"> </li>
+                            <li data-target="#carousel_nckat" data-slide-to="3"> </li>
+                            <li data-target="#carousel_nckat" data-slide-to="4"> </li>
+                            <li data-target="#carousel_nckat" data-slide-to="5"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/nckat_1.jpg" class="d-block w-100" alt="Каталог. Лицо каталога (обложка)">
+                                <div class="carousel-caption">
+                                <p>Лицо каталога (обложка)</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/nckat_2.jpg" class="d-block w-100" alt="Каталог. Страница каталога">
+                                <div class="carousel-caption">
+                                <p>Страница каталога</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/nckat_3.jpg" class="d-block w-100" alt="Каталог. Страница каталога">
+                                <div class="carousel-caption">
+                                <p>Страница каталога</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/nckat_4.jpg" class="d-block w-100" alt="Каталог. Страница каталога">
+                                <div class="carousel-caption">
+                                <p>Страница каталога</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/nckat_5.jpg" class="d-block w-100" alt="Каталог. Страница каталога">
+                                <div class="carousel-caption">
+                                <p>Страница каталога</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/nckat_6.jpg" class="d-block w-100" alt="Каталог. Страница каталога">
+                                <div class="carousel-caption">
+                                <p>Страница каталога</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_nckat" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_nckat" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Каталог продукции компании «Новое время», предназначенный для торговых представителей на местах. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="mgprm">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Буклет</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_mgprm" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_mgprm" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_mgprm" data-slide-to="1"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/mgprm_1.jpg" class="d-block w-100" alt="Буклет. Лицо буклета">
+                                <div class="carousel-caption">
+                                <p>Лицо буклета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/mgprm_2.jpg" class="d-block w-100" alt="Буклет. Оборот буклета">
+                                <div class="carousel-caption">
+                                <p>Оборот буклета</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_mgprm" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_mgprm" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Информационный буклет (один сгиб) для распространения в аптеках, посвященный препарату «Промакс» от компании «Мегаком».</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="rnk">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Книжные серии</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_rnk" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_rnk" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_rnk" data-slide-to="1"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/rnk_1.jpg" class="d-block w-100" alt="Книжные серии. Обложки серий книг разных жанров">
+                                <div class="carousel-caption">
+                                <p>Обложки серий книг разных жанров</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/rnk_2.jpg" class="d-block w-100" alt="Книжные серии. Серия «Историческая библиотека» ">
+                                <div class="carousel-caption">
+                                <p>Серия «Историческая библиотека» </p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_rnk" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_rnk" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Дизайн книжных серий для издательства «Ранок». Включал в себя разработку концепции обложки и типовых внутренних разворотов, постановку задачи художнику-иллюстратору, обработку готовых иллюстраций, финальную верстку и подготовку макета к печати.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="wbcvr">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Тетради</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_wbcvr" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_wbcvr" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="1"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="2"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="3"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="4"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="5"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="6"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="7"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="8"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="9"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="10"> </li>
+                            <li data-target="#carousel_wbcvr" data-slide-to="11"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/wbcvr_1.jpg" class="d-block w-100" alt="Тетради. Серия «Восток». Обложка 1 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Восток». Обложка 1 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_2.jpg" class="d-block w-100" alt="Тетради. Серия «Восток». Обложка 2 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Восток». Обложка 2 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_3.jpg" class="d-block w-100" alt="Тетради. Серия «Восток». Обложка 3 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Восток». Обложка 3 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_4.jpg" class="d-block w-100" alt="Тетради. Серия «Восток». Обложка 4 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Восток». Обложка 4 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_5.jpg" class="d-block w-100" alt="Тетради. Серия «Цветы». Обложка 1 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Цветы». Обложка 1 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_6.jpg" class="d-block w-100" alt="Тетради. Серия «Цветы». Обложка 2 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Цветы». Обложка 2 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_7.jpg" class="d-block w-100" alt="Тетради. Серия «Цветы». Обложка 3 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Цветы». Обложка 3 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_8.jpg" class="d-block w-100" alt="Тетради. Серия «Цветы». Обложка 4 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Цветы». Обложка 4 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_9.jpg" class="d-block w-100" alt="Тетради. Серия «Деньги». Обложка 1 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Деньги». Обложка 1 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_10.jpg" class="d-block w-100" alt="Тетради. Серия «Деньги». Обложка 2 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Деньги». Обложка 2 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_11.jpg" class="d-block w-100" alt="Тетради. Серия «Деньги». Обложка 3 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Деньги». Обложка 3 </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/wbcvr_12.jpg" class="d-block w-100" alt="Тетради. Серия «Деньги». Обложка 4 ">
+                                <div class="carousel-caption">
+                                <p>Серия «Деньги». Обложка 4 </p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_wbcvr" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_wbcvr" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Комплект обложек для общих тетрадей на тему «Восток», «Цветы» и «Деньги». </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="modal fade" id="inrhyd">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-misc">Каталог</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel_inrhyd" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel_inrhyd" data-slide-to="0" class="active" > </li>
+                            <li data-target="#carousel_inrhyd" data-slide-to="1"> </li>
+                            <li data-target="#carousel_inrhyd" data-slide-to="2"> </li>
+                            </ol>
+                            <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="../../img/08-misc/inrhyd_1.jpg" class="d-block w-100" alt="Каталог. Обложка каталога">
+                                <div class="carousel-caption">
+                                <p>Обложка каталога</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/inrhyd_2.jpg" class="d-block w-100" alt="Каталог. Разворот каталгога">
+                                <div class="carousel-caption">
+                                <p>Разворот каталгога</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../../img/08-misc/inrhyd_3.jpg" class="d-block w-100" alt="Каталог. Разворот каталога">
+                                <div class="carousel-caption">
+                                <p>Разворот каталога</p>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_inrhyd" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_inrhyd" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Каталог гидравлических узлов для мелитопольского завода гидроагрегатов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+    <!--ABOUT ME MODAL -->
+    <div class="modal fade" id="about">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark">Обо мне</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../../img/author.jpg" width="280px" height="280px" alt="" class="mr-3 float-left">
+                    <p>Автобиография – самый трудный жанр: всегда очень трудно решить, что из того, что ты о себе знаешь (а знаешь ты примерно всё, как тебе кажется) можно доверить экрану или бумаге. И что из того, что ты решишься написать, поможет лучше тебя раскрыть, а что вообще никому не интересно. Как найти такие слова и темы, чтобы не впасть в банальщину и не упустить что-то важное…</p>
+<p>Я не знаю.</p>
+<p>Говорят, что есть такой писательский прием: если у тебя затык и ты не можешь придумать, как начать излагать свою историю, то надо представить, что ты рассказываешь её своему близкому другу. А чтобы окончательно ввести в заблуждение скованный творческим спазмом мозг, можно даже начать со слов: «Послушай, старик…»</p>
+<p>Послушай, старик… Я живу этим с детства. Ясное дело, что под «этим» я понимаю не дизайн как таковой, а свое искреннюю и постоянную увлеченность визуальной частью окружающего мира. И хотя я очень люблю музыку и, как говорят мои близкие, неплохо готовлю, но все же зрение, как орган чувств, всегда было для меня самым важным каналом восприятия информации. Но не будем долго задерживаться в моем безоблачном детстве, где была и мама, художник-модельер по профессии (я любил разглядывать эскизы моделей одежды, которые она рисовала) и отец, с которым мы много лет собирали альбомы репродукций картин и почтовые марки, посвященные теме живописи. Помню одну историю: уже в институте, учась на инженера-системотехника (так раньше называли айтишников), я работал вместе с двумя друзьями над курсовым проектом по программированию. И как-то раз вместо своей части кода для нашей программы я принес им... варианты её логотипа.</p> 
+<p>И даже после этого я искренне думал, что буду заниматься именно программированием, которое, к слову, меня привлекает до сих пор. Благодаря базе, полученной в институте, сейчас мне удается эффективнее решать мои дизайнерские задачи, используя возможности, которые предоставляют Python и JavaScript (хотя тут я, конечно, не «настоящий сварщик»).  Но прости, старик, отвлекся. Итак, я на последнем курсе института иду устраиваться на работу на должность программиста. Но в том месте, куда меня по протекции протолкнули (конец 90-х, такие дела), вакансия была только в отделе рекламы. И я согласился.</p> 
+<p>Изученный на рабочем месте Corel дал через несколько месяцев возможность устроиться уже в настоящее рекламное агентство на должность настоящего дизайнера.  Да, сейчас это кажется невероятным, но тогда это было в порядке вещей: индустрия только становилась на ноги.</p>
+<p>И я вместе с ней. Работал уже над настоящими заказами, учился в процессе, набивал шишки и в конце концов чего-то достигал. И, в общем-то, так продолжается до сих пор. Я не прекращаю учиться на каждом новом проекте и, хоть заметно продвинулся на своем пути, но все так же далёк не то, что от совершенства, но даже от идеала. Но, тем не менее, не прекращаю к нему стремиться.</p>  
+<p>Вот такой получился рассказ. Спасибо, старик, что выслушал.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../../js/jQuery.succinct.js"></script>
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+
+        $(function(){
+            $('.truncate').succinct({
+                size: 60
+            });
+        });
+    </script>
+</body>
+</html>
