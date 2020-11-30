@@ -12,8 +12,8 @@ def data_dict(input, name, list):
 db = sqlite3.connect("portfolio-data.db3")
 crsr = db.cursor()
 
-crsr.execute("SELECT type_ID, typename, intro_text, abbrev, icon FROM TYPES")
-genres = data_dict(crsr.fetchall(), "genres_data", ["nr", "typename", "intro_text", "abbrev", "icon"])
+crsr.execute("SELECT type_ID, typename, intro_text, abbrev, icon, page_keywords, page_desc FROM TYPES")
+genres = data_dict(crsr.fetchall(), "genres_data", ["nr", "typename", "intro_text", "abbrev", "icon", "page_keywords", "page_desc"])
 
 works = {}
 
@@ -44,7 +44,7 @@ templateEnv = jinja2.Environment(loader=templateLoader)
 index_tmplt = templateEnv.get_template('index_multipage_template.html')
 inner_tmplt = templateEnv.get_template('itempage_multipage_template.html')
 
-with open('www/index_multipage_new.html', 'wb') as dest:
+with open('www/index.html', 'wb') as dest:
     output = index_tmplt.render(
         my_genres = genres,
         my_texts = texts(*line)._asdict()
