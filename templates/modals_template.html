@@ -1,0 +1,73 @@
+    <!--ABOUT ME MODAL -->
+    <div class="modal fade" id="about">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark">Обо мне</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ path }}img/author.jpg" width="280px" height="280px" alt="" class="mr-3 float-left">
+                    {{ about }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESUME MODAL -->
+    <div class="modal fade" id="resume">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Резюме</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Мое резюме доступно для скачивания и ознакомления в любом из следующих форматов:</p>
+                    <ul>
+                        <li>MS Word DOCX <a href="{{ path }}cv/Maxime_Fedorov_(designer)_CV.docx"><i class="fas fa-file-download"></a></i></li>
+                        <li>Adobe Acrobat PDF <a href="{{ path }}cv/Maxime_Fedorov_(designer)_CV.pdf" target="_blank"><i class="fas fa-file-export"></a></i></li>
+                        <li>Google Docs document <a href="https://bit.ly/Fedorov_CV" target="_blank"><i class="fas fa-file-export"></a></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT ME MODAL -->
+    <div class="modal fade" id="contacts">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Можно написать мне письмо...</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactform" action="" method="post">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input id="name" class="form-control" type="text" name="name" tabindex="1"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Ваш e-mail</label>
+                            <input id="email" class="form-control" type="text" name="email" tabindex="2"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="messaage">Пишите, я люблю читать письма!</label>
+                            <textarea id="message" class="form-control" name="message" tabindex="3"></textarea>
+                        </div>
+                        <div class="g-recaptcha mb-3" data-sitekey="6LdewfQZAAAAAO38SKFEa_OVZPfyybLTgCBrx9zU"></div>
+                        <input class="btn-block btn-primary" type="submit" id="submit" value="Отправить"/>
+                        <input class="btn-block btn-secondary" type="reset" id="reset" value="Очистить" name="reset"/>
+                    </form>
+                    <hr>
+                    <div id="success"></div>
+                </div>
+                <div class="modal-footer">
+                        <h5 class="modal-title w-100 text-center">...или связаться со мной по телефону</h5>
+                        <p class="w-100 text-center">+38 (050) 935-42-33</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>

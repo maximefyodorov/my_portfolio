@@ -43,11 +43,26 @@ templateLoader = jinja2.FileSystemLoader(searchpath='x:/Development/Portfolio/te
 templateEnv = jinja2.Environment(loader=templateLoader)
 index_tmplt = templateEnv.get_template('index_multipage_template.html')
 inner_tmplt = templateEnv.get_template('itempage_multipage_template.html')
+modals_tmplt = templateEnv.get_template('modals_template.html')
+
+with open('templates/modals.html', 'wb') as dest:
+    output = modals_tmplt.render(
+        about = texts(*line)._asdict()['about'],
+        path = ''
+    )
+    dest.write(output.encode('utf-8'))
 
 with open('www/index.html', 'wb') as dest:
     output = index_tmplt.render(
         my_genres = genres,
         my_texts = texts(*line)._asdict()
+    )
+    dest.write(output.encode('utf-8'))
+
+with open('templates/modals.html', 'wb') as dest:
+    output = modals_tmplt.render(
+        about = texts(*line)._asdict()['about'],
+        path = '../../'
     )
     dest.write(output.encode('utf-8'))
 
