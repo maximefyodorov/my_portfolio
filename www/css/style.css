@@ -58,3 +58,27 @@ body {
   padding-left: 0.37rem;
   padding-right: 0.4rem;
   padding-bottom: 0.08rem; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .3s ease;
+  background-color: rgba(255, 255, 255, 0.75); }
+
+.gsimg {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity: 0.75; }
+
+.thumb:hover .gsimg {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  opacity: 1;
+  transition: .5s ease; }

@@ -48,6 +48,7 @@ modals_tmplt = templateEnv.get_template('modals_template.html')
 with open('templates/modals.html', 'wb') as dest:
     output = modals_tmplt.render(
         about = texts(*line)._asdict()['about'],
+        copyright = texts(*line)._asdict()['copyright'],
         path = ''
     )
     dest.write(output.encode('utf-8'))
@@ -62,6 +63,7 @@ with open('www/index.html', 'wb') as dest:
 with open('templates/modals.html', 'wb') as dest:
     output = modals_tmplt.render(
         about = texts(*line)._asdict()['about'],
+        copyright = texts(*line)._asdict()['copyright'],
         path = '../../'
     )
     dest.write(output.encode('utf-8'))
@@ -74,6 +76,6 @@ for c_genre in genres:
             current_genre = c_genre,
             current_genre_name = c_genre_a,
             my_works = works[c_genre_a],
-            my_texts = texts(*line)._asdict()
+            title = texts(*line)._asdict()['title']
         )
         dest.write(output.encode('utf-8'))
