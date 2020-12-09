@@ -90,11 +90,11 @@
     </section>
 
     <!-- PORTFOLIO ADVERTISING SECTION -->
-    <section">
+    <section>
         <div id="advertising" class="bg-white mb-5">
             <div class="container p-2">
                 <h2 class="display-4 text-advertising my-3">Реклама</h2>
-                <p class="lead mb-4">Рекламные модули (блоки), которые выходили на страницах  различных изданий. Здесь же представлена серия презентаций — по сути, таких же рекламных блоков, но для распространения по электронной почте, а не посредством печати.</p>
+                <p class="lead mb-4">Рекламные модули (блоки), которые выходили на страницах  различных изданий. Здесь же представлена серия презентаций — по сути, это такие же рекламные блоки, но распространялись они по электронной почте, а не посредством печати.</p>
                 <!-- ADVERTISING ITEMS -->
                 <div class="row mb-4">
                     <div class="col-6 col-md-3">
@@ -422,10 +422,10 @@
         </div>
             
 
-        <!--NAVBAR -->
+    <!--NAVBAR -->
     <nav class="navbar fixed-bottom navbar-expand-md navbar-light bg-light">
         <div class="container pl-2">
-            <span class="navbar-text"><small>Copyright &copy; Максим Фёдоров, дизайн, фото, 1996–<span id="year"></span></small></span>
+            <span class="navbar-text"><small>&copy; Федоров М. А., дизайн, фото, 1996–<span id="year"></span></small></span>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -544,7 +544,7 @@
         $(document).ready(function () {
             $('#submit').click(function () {
                 $('#success').hide(1);
-                $.post("email_ajax.php", $("#contact").serialize(), function (response) {
+                $.post("../../email_ajax.php", $("#contactform").serialize(), function (response) {
                     $('#success').html(response);
                     $('#success').show(1000);
                 });

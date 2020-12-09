@@ -90,7 +90,7 @@
     </section>
 
     <!-- PORTFOLIO PHOTOGRAPHY SECTION -->
-    <section">
+    <section>
         <div id="photography" class="bg-white mb-5">
             <div class="container p-2">
                 <h2 class="display-4 text-photography my-3">Фото</h2>
@@ -503,9 +503,9 @@
                                 </div>
                             </div>
                             <div class="carousel-item ">
-                                <img src="../../img/07-photography/itl193_3.jpg" class="d-block w-100" alt="Италия 2 (часть 3). Море">
+                                <img src="../../img/07-photography/itl193_3.jpg" class="d-block w-100" alt="Италия 2 (часть 3). Море в сентябре">
                                 <div class="carousel-caption">
-                                <p>Море</p>
+                                <p>Море в сентябре</p>
                                 </div>
                             </div>
                             <div class="carousel-item ">
@@ -734,10 +734,10 @@
         </div>
             
 
-        <!--NAVBAR -->
+    <!--NAVBAR -->
     <nav class="navbar fixed-bottom navbar-expand-md navbar-light bg-light">
         <div class="container pl-2">
-            <span class="navbar-text"><small>Copyright &copy; Максим Фёдоров, дизайн, фото, 1996–<span id="year"></span></small></span>
+            <span class="navbar-text"><small>&copy; Федоров М. А., дизайн, фото, 1996–<span id="year"></span></small></span>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -856,7 +856,7 @@
         $(document).ready(function () {
             $('#submit').click(function () {
                 $('#success').hide(1);
-                $.post("email_ajax.php", $("#contact").serialize(), function (response) {
+                $.post("../../email_ajax.php", $("#contactform").serialize(), function (response) {
                     $('#success').html(response);
                     $('#success').show(1000);
                 });

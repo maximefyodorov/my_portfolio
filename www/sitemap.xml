@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.fedorov.in.ua/</loc>
+  <lastmod>2020-12-08T11:25:21+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/portfolio/posters/</loc>
+  <lastmod>2020-12-08T11:25:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/portfolio/logos/</loc>
+  <lastmod>2020-12-08T11:25:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/portfolio/advertising/</loc>
+  <lastmod>2020-12-08T11:25:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/portfolio/package/</loc>
+  <lastmod>2020-12-08T11:25:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/portfolio/calendars/</loc>
+  <lastmod>2020-12-08T11:25:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/portfolio/sites/</loc>
+  <lastmod>2020-12-08T11:25:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/portfolio/photography/</loc>
+  <lastmod>2020-12-08T11:25:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/portfolio/misc/</loc>
+  <lastmod>2020-12-08T11:25:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/cv/Maxime_Fedorov_(designer)_CV.docx</loc>
+  <lastmod>2020-12-08T09:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fedorov.in.ua/cv/Maxime_Fedorov_(designer)_CV.pdf</loc>
+  <lastmod>2020-12-08T09:46:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

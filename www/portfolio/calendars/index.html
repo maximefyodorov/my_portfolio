@@ -90,11 +90,11 @@
     </section>
 
     <!-- PORTFOLIO CALENDARS SECTION -->
-    <section">
+    <section>
         <div id="calendars" class="bg-white mb-5">
             <div class="container p-2">
                 <h2 class="display-4 text-calendars my-3">Календари</h2>
-                <p class="lead mb-4">Квартальные календари — один из самых распространенных видов корпоративных сувениров. Привлекательный квартальный календарь — лучший способ на целый год разместить информацию о себе в офисе своего клиента или партнера. Так можно легко обеспечить свое рекламное присутствие, выполняя при этом полезную и востребованную функцию. </p>
+                <p class="lead mb-4">Квартальные календари — один из самых распространенных видов корпоративных сувениров. Это лучший способ, находясь в офисе своего клиента или партнера, напоминать о себе целый год, выполняя при этом востребованную функцию. </p>
                 <!-- CALENDARS ITEMS -->
                 <div class="row mb-4">
                     <div class="col-6 col-md-3">
@@ -171,7 +171,7 @@
                             <span role="button" class="thumb"><img src="../../img/05-calendars/umhclnd_thumb.jpg" alt="Календари. Календари UMH" class="card-img rounded-0 gsimg" data-toggle="modal" data-target="#umhclnd"></span>
                             <div class="card-body">
                                 <h5 class="card-title text-calendars">Календари UMH</h5>
-                                <p class="card-text truncate">Серия настольных перекидных календарей для всей корпорации UMH, подразделением которой являлся ИД «Теленеделя». Разрабатывался с 2006 по 2010 год в сотрудничестве иллюстратором Дмитрием Вовком. Для каждого из календарей прорабатывалась сквозная тема, которая затем находила свое воплощение в иллюстрациях.</p>
+                                <p class="card-text truncate">Серия настольных перекидных календарей для всей корпорации UMH, подразделением которой являлся ИД «Теленеделя». Разрабатывалась с 2006 по 2010 год в сотрудничестве иллюстратором Дмитрием Вовком. Для каждого из календарей прорабатывалась сквозная тема, которая затем находила свое воплощение в иллюстрациях.</p>
                                 <button class="btn btn-sm btn-calendars" data-toggle="modal" data-target="#umhclnd">Подробнее</button>
                             </div>
                         </div>
@@ -497,7 +497,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <p class="w-100 text-center">Серия настольных перекидных календарей для всей корпорации UMH, подразделением которой являлся ИД «Теленеделя». Разрабатывался с 2006 по 2010 год в сотрудничестве иллюстратором Дмитрием Вовком. Для каждого из календарей прорабатывалась сквозная тема, которая затем находила свое воплощение в иллюстрациях.</p>
+                        <p class="w-100 text-center">Серия настольных перекидных календарей для всей корпорации UMH, подразделением которой являлся ИД «Теленеделя». Разрабатывалась с 2006 по 2010 год в сотрудничестве иллюстратором Дмитрием Вовком. Для каждого из календарей прорабатывалась сквозная тема, которая затем находила свое воплощение в иллюстрациях.</p>
                     </div>
                 </div>
             </div>
@@ -562,10 +562,10 @@
         </div>
             
 
-        <!--NAVBAR -->
+    <!--NAVBAR -->
     <nav class="navbar fixed-bottom navbar-expand-md navbar-light bg-light">
         <div class="container pl-2">
-            <span class="navbar-text"><small>Copyright &copy; Максим Фёдоров, дизайн, фото, 1996–<span id="year"></span></small></span>
+            <span class="navbar-text"><small>&copy; Федоров М. А., дизайн, фото, 1996–<span id="year"></span></small></span>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -684,7 +684,7 @@
         $(document).ready(function () {
             $('#submit').click(function () {
                 $('#success').hide(1);
-                $.post("email_ajax.php", $("#contact").serialize(), function (response) {
+                $.post("../../email_ajax.php", $("#contactform").serialize(), function (response) {
                     $('#success').html(response);
                     $('#success').show(1000);
                 });

@@ -33,9 +33,9 @@ for curr_genre in genres:
                 desc_list += list(desc_item)
         curr_work ['details'] = desc_list
 
-crsr.execute("SELECT title, keywords, description, quota, quota_author, copyright, about, contacts FROM TEXTS where line_ID = 1")
+crsr.execute("SELECT title, keywords, description, quota, quota_author, copyright, about, contacts, error_text FROM TEXTS where line_ID = 1")
 line = crsr.fetchone()
-texts = namedtuple("site_texts", ["title", "keywords", "description", "quota", "quota_author", "copyright", "about", "contacts"])
+texts = namedtuple("site_texts", ["title", "keywords", "description", "quota", "quota_author", "copyright", "about", "contacts", "error_text"])
 
 db.close()
 
@@ -53,12 +53,16 @@ with open('templates/modals.html', 'wb') as dest:
     )
     dest.write(output.encode('utf-8'))
 
-with open('www/index.html', 'wb') as dest:
-    output = index_tmplt.render(
-        my_genres = genres,
-        my_texts = texts(*line)._asdict()
-    )
-    dest.write(output.encode('utf-8'))
+page_roles = ['index', '400', '401', '403', '404', '405', '408', '500', '501', '502', '503', '504']
+
+for role in page_roles:
+    with open('www/' + role + '.html', 'wb') as dest:
+        output = index_tmplt.render(
+            my_role = role,
+            my_genres = genres,
+            my_texts = texts(*line)._asdict()
+        )
+        dest.write(output.encode('utf-8'))
 
 with open('templates/modals.html', 'wb') as dest:
     output = modals_tmplt.render(

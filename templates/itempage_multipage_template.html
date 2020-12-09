@@ -57,7 +57,7 @@
     </section>
 
     <!-- PORTFOLIO {{ current_genre_name|upper }} SECTION -->
-    <section">
+    <section>
         <div id="{{ current_genre_name }}" class="bg-white mb-5">
             <div class="container p-2">
                 <h2 class="display-4 text-{{ current_genre_name }} my-3">{{ current_genre['typename'] }}</h2>
@@ -140,7 +140,7 @@
         $(document).ready(function () {
             $('#submit').click(function () {
                 $('#success').hide(1);
-                $.post("email_ajax.php", $("#contact").serialize(), function (response) {
+                $.post("../../email_ajax.php", $("#contactform").serialize(), function (response) {
                     $('#success').html(response);
                     $('#success').show(1000);
                 });
